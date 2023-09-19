@@ -1,0 +1,33 @@
+<div class="container">
+    <h1 class="author__title">Hi, i am Haidar</h1>
+</div>
+<p class="container" style="margin:  0;">Backend Dev & Network Eng</p>
+<br>
+<div class="container">
+<a href="https://www.instagram.com/haidar23ghanem/"><img  class="author__img" src="/img/instagram.png"></a>
+<a href="https://github.com/HaidarGhanem/"><img  class="author__img" src="/img/github.png"></a>
+<a href="https://www.linkedin.com/in/haidar-ghanem/"><img  class="author__img" src="/img/linkedin.png"></a>
+</div>
+
+<div class="container">
+        <p>this is a Blog site project made with Node.js & MongoDB , can be used for a personal reasons</p>
+</div>
+
+<section class="articles">
+<h2 class="articles__heading">Lastest Articles :</h2>
+<ul class="articles__ul">
+    <% data.forEach(post => { %>
+    
+    <li>
+        <a href="/posts/<%= post._id %>">
+        <p class="article__title"><%= post.title %><p>
+        <span class="article__date"><%= post.createdAt.toDateString() %></span>
+        </a>
+    </li>
+
+    <% }) %>
+</ul>
+
+
+    
+</section>

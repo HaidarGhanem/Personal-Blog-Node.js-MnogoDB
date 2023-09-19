@@ -1,0 +1,19 @@
+<a href="/admin"><button class="btn">Back</button></a>
+<div class="admin-title">
+    <h2>Edit Post :</h2>
+</div>
+
+<form action="/edit-post/<%= data._id %>?_method=PUT" method="POST">
+    <label for="title"><b>title:</b></label>
+    <input class="inputpanel" type="text" placeholder="Post Title" name="title" value="<%= data.title %>"/>
+
+    <label for="body"><b>content:</b></label>
+    <textarea  class="inputpanel" name="body" , cols = "50" , rows = "10"><%= data.body %></textarea>
+
+    <input type="submit" value="Edit" class="btn" style="font-size: 1.6rem; background-color: white; color: rgba(16, 10, 46);" />
+    </form>
+    <br>
+    <form action="/delete-post/<%= data._id %>?_method=DELETE" method="POST">
+        <input type="submit" value="Delete" class="btn" style="border-color:rgb(241, 44, 44);  font-size: 1rem; background-color: rgb(241, 44, 44); color: rgb(255, 255, 255);" />
+        
+    </form>

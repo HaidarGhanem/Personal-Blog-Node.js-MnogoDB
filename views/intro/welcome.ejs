@@ -1,0 +1,47 @@
+<a href="/" class="header__logo"><i>Blogo</i></a>
+
+<div style="text-align: center; padding-top: 70px; margin: 0; ">
+<p style="font-size: 64px; padding-top:10px ;"><b>Welcome to the Blog</b></p>
+        <div style="text-align: center;">
+            <h2 style="display: inline-block; margin-inline: 10px; margin-top: 0; ">if you are just a visitor please click </h2><a href="/home"><button class="geust__btn" aria-expanded="false">
+             Guest
+            </button></a>
+        </div>
+</div>
+
+<div class="intro__container">
+
+    <div class="authpanel">
+        <p >Sign In</p>
+<form action="/signin" method="POST">
+
+    <label for="username">user name</label>
+    <input class="inputpanel" type="text" placeholder="enter user name" name="username">
+
+    <label for="password">password</label>
+    <input class="inputpanel" type="password" placeholder="enter password" name="password">
+
+    <input type="submit" value="login" class="btn">
+
+</form>
+    </div>
+
+
+
+
+    <div class="authpanel">
+        <p>Register</p>
+<form action="/register" method="POST">
+
+    <label for="username">user name</label>
+    <input class="inputpanel" type="text" placeholder="enter user name" name="username">
+
+    <label for="password">password</label>
+    <input  class="inputpanel" type="password" placeholder="enter password" name="password">
+
+    <input type="submit" value="register" class="btn">
+
+</form>
+    </div>
+
+</div>
